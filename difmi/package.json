@@ -3,8 +3,8 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "slidev build",
-    "dev": "slidev --open --port=8080 --remote",
+    "build": "slidev build --base /presentations/",
+    "dev": "slidev --open",
     "export": "slidev export"
   },
   "dependencies": {

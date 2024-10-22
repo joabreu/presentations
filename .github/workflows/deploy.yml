@@ -43,6 +43,8 @@ jobs:
         run: npm ci
       - name: build
         run: npm run build
+      - name: Save artifacts
+        run: mv dist ../ && cd ..
       - name: upload build
         uses: actions/upload-artifact@v3
         with:

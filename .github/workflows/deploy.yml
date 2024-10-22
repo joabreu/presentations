@@ -37,14 +37,8 @@ jobs:
           node-version: 16
       - name: Setup Pages
         uses: actions/configure-pages@v4
-      - name: Change to folder
-        run: cd difmi/
-      - name: install
-        run: npm ci
-      - name: build
-        run: npm run build
-      - name: Save artifacts
-        run: mv dist ../ && cd ..
+      - name: Install and Build
+        run: cd difmi/ && npm ci && npm run build && mv dist/ ../dist
       - name: upload build
         uses: actions/upload-artifact@v3
         with:

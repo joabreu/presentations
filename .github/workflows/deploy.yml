@@ -40,9 +40,8 @@ jobs:
       - name: Install and Build
         run: cd difmi/ && npm ci && npm run build && mv dist/ ../dist && cd ..
       - name: upload build
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-pages-artifact@v1
         with:
-          name: 'github-pages'
           path: dist
   # Deployment job
   deploy:

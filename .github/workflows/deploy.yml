@@ -38,9 +38,9 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Install and Build
-        run: cd difmi/ && npm ci && npm run build && mv dist/ ../dist
+        run: cd difmi/ && npm ci && npm run build && mv dist/ ../dist && cd ..
       - name: upload build
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: build
           path: dist

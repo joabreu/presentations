@@ -5,7 +5,6 @@ class: text-white
 themeConfig:
   paginationX: r
   paginationY: b
-  paginationPagesDisabled: [0]
 title: DIFMI
 transition: slide-left
 ---
@@ -24,3 +23,13 @@ Subtitle
 	* Test 1.1
 	* Test 1.2
 * Test 2
+
+---
+
+# Title
+
+<Window title="Test">
+```bash
+echo "Hello World!"
+```
+</Window>

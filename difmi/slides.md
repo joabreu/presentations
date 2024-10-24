@@ -6,6 +6,7 @@ themeConfig:
   paginationY: b
 title: DIFMI
 transition: slide-left
+routerMode: hash
 ---
 
 # DIFMI

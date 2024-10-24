@@ -1,7 +1,6 @@
 ---
 theme: academic
 layout: cover
-class: text-white
 themeConfig:
   paginationX: r
   paginationY: b

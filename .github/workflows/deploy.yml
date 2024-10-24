@@ -37,8 +37,10 @@ jobs:
           node-version: 20
       - name: Setup Pages
         uses: actions/configure-pages@v4
-      - name: Install and Build
-        run: cd difmi/ && npm ci && npm run build && mv dist/ ../dist && cd ..
+      - name: Setup Dist Folder
+        run: mkdir dist
+      - name: Install and Build (DIFMI)
+        run: cd difmi/ && npm ci && npm run build && mv dist/ ../dist/difmi && cd ..
       - name: upload build
         uses: actions/upload-pages-artifact@v3
         with:

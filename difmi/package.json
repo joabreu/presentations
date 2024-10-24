@@ -3,7 +3,7 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "slidev build --base /presentations/",
+    "build": "slidev build --base /presentations/difmi",
     "dev": "slidev --open",
     "export": "slidev export"
   },

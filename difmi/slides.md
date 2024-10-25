@@ -1,17 +1,14 @@
 ---
-theme: academic
-layout: cover
-themeConfig:
-  paginationX: r
-  paginationY: b
+theme: ../slidev-theme-joabreu
+layout: intro
 title: DIFMI
-transition: slide-left
-routerMode: hash
 ---
 
 # DIFMI
 
 ## Subtitle
+
+`Test`
 
 ---
 

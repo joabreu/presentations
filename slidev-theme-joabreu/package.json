@@ -1,0 +1,45 @@
+{
+  "name": "slidev-theme-joabreu",
+  "version": "0.0.0",
+  "type": "module",
+  "keywords": [
+    "slidev-theme",
+    "slidev"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "slidev build example.md",
+    "dev": "slidev example.md --open",
+    "export": "slidev export example.md",
+    "screenshot": "slidev export example.md --format png"
+  },
+  "dependencies": {
+    "@slidev/types": "^0.50.0-beta.4",
+    "codemirror-theme-vars": "^0.1.2",
+    "prism-theme-vars": "^0.2.5",
+    "unocss": "^0.63.6"
+  },
+  "devDependencies": {
+    "@slidev/cli": "^0.50.0-beta.4"
+  },
+  "//": "Learn more: https://sli.dev/guide/write-theme.html",
+  "slidev": {
+    "colorSchema": "both",
+    "defaults": {
+      "lineNumbers": "false",
+      "routerMode": "hash",
+      "transition": "slide-left",
+      "themeConfig": {
+        "paginationX": "r",
+        "paginationY": "b"
+      },
+      "fonts": {
+        "sans": "Nunito Sans",
+        "mono": "Fira Code",
+	"serif": "JetBrains Mono"
+      }
+    }
+  }
+}

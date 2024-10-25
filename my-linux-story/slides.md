@@ -14,7 +14,7 @@ title: My Linux Story
 
 # The Start
 
-<Window title="Add I2S/ADV7511 audio support for ARC AXS10x boards">
+<Window title="[PATCH 0/3 v2] Add I2S/ADV7511 audio support for ARC AXS10x boards">
 ```text{all|18}
 From:       Jose.Abreu () synopsys ! com (Jose Abreu)
 Date:       2016-03-28 9:41:48
@@ -93,4 +93,42 @@ layout: fact
 ---
 
 # Lesson One
-*Always develop and test your code against the mainline tree of the affected subsystem*
+*Always submit your code against the mainline tree of the affected subsystem*
+
+---
+
+# Things can go wrong
+
+<Window title="[PATCH] ASoC: dwc: disallow building designware_pcm as a module">
+```text{8}
+From:       XXXX <XXXX () YYYY ! ZZZZ>
+Date:       2017-04-18 10:59:54
+
+It makes not sense: the whether the PIO PCM extension is used is
+hardcoded to the designware_i2s driver and designware_pcm doesn't
+have any module metadata, causing a kernel taint:
+
+  [   44.287000] designware_pcm: module license 'unspecified' taints kernel.
+```
+</Window>
+
+### Bug found
+
+<Window title="Re: [PATCH] ASoC: dwc: disallow building designware_pcm as a module">
+```text{4,5,6}
+From:       Jose.Abreu () synopsys ! com (Jose Abreu)
+Date:       2017-04-27 18:49:04
+
+I just noticed today that without a valid license tag we
+get unresolved symbols when inserting pcm module so this patch is
+really needed as a fix.
+```
+</Window>
+
+---
+layout: fact
+---
+
+# Lesson Two
+*Always test your code with all possible build combinations*
+

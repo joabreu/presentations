@@ -39,8 +39,12 @@ jobs:
         uses: actions/configure-pages@v4
       - name: Setup Dist Folder
         run: mkdir dist
+      - name: Install and Build (Base theme)
+        run: cd slidev-theme-joabreu/ && npm ci && npm run build && cd ..
       - name: Install and Build (DIFMI)
         run: cd difmi/ && npm ci && npm run build && mv dist/ ../dist/difmi && cd ..
+      - name: Install and Build (My Linux Story)
+        run: cd my-linux-story/ && npm ci && npm run build && mv dist/ ../dist/difmi && cd ..
       - name: upload build
         uses: actions/upload-pages-artifact@v3
         with:

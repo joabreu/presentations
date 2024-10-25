@@ -1,2 +1,3 @@
-# presentations
-A Misc. of Resources
+# Presentations
+
+A misc. of resources with my experiences.

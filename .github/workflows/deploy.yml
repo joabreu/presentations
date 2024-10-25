@@ -39,6 +39,8 @@ jobs:
         uses: actions/configure-pages@v4
       - name: Setup Dist Folder
         run: mkdir dist
+      - name: Install and Build (Home)
+        run: npm ci && npx github-readme-to-html -i README.md -o index.html -t "Jose' Presentations"
       - name: Install and Build (Base theme)
         run: cd slidev-theme-joabreu/ && npm ci && npm run build && cd ..
       - name: Install and Build (DIFMI)

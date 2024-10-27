@@ -112,6 +112,8 @@ have any module metadata, causing a kernel taint:
 ```
 </Window>
 
+<v-click>
+
 ### Bug found
 
 <Window title="Re: [PATCH] ASoC: dwc: disallow building designware_pcm as a module">
@@ -124,6 +126,7 @@ get unresolved symbols when inserting pcm module so this patch is
 really needed as a fix.
 ```
 </Window>
+</v-click>
 
 ---
 layout: fact

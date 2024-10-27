@@ -2,7 +2,7 @@
   <div class="slidev-layout cover" :style="style">
     <div class="my-auto w-full">
       <slot />
-      <div v-if="coverAuthors.length || coverDate" class="absolute bottom-12 flex">
+      <div v-if="coverAuthors.length || coverDate" class="absolute bottom-12 flex w-full">
         <p v-if="coverAuthors.length">
           <template v-for="(coverAuthor, idx) in coverAuthors">
             <TextWithOptionalLink :link="coverAuthorUrls[idx]" :text="coverAuthor" />
@@ -11,6 +11,7 @@
           </template>
         </p>
         <p v-if="coverDate">{{ coverAuthors.length ? `, ${coverDate}` : coverDate }}</p>
+	<p class="ml-10 text-xs">Press <code>Space</code> or <code>&larr;</code> / <code>&rarr;</code> to navigate</p>
       </div>
       <div class="absolute bottom-0 font-extralight mb-1 mr-2 right-0 text-xs" v-if="coverBackgroundSource">
         <TextWithOptionalLink :link="coverBackgroundSourceUrl" :text="coverBackgroundSource" />

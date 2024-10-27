@@ -135,3 +135,44 @@ layout: fact
 # Lesson Two
 *Always test your code with all possible build combinations*
 
+---
+
+# Adding new Features
+
+<Window title="[PATCH] drm: edid: HDMI 2.0 HF-VSDB block parsing">
+```text
+From:       Jose Abreu <Jose.Abreu () synopsys ! com>
+Date:       2016-08-10 15:29:21
+
+Adds parsing for HDMI 2.0 'HDMI Forum Vendor
+Specific Data Block'. This block is present in
+some HDMI 2.0 EDID's and gives information about
+scrambling support, SCDC, 3D Views, and others.
+
+Parsed parameters are stored in drm_connector
+structure.
+
+Signed-off-by: Jose Abreu <joabreu@synopsys.com>
+```
+</Window>
+
+<v-click>
+
+### Repeated Work
+
+<Window title="Re: [PATCH] drm: edid: HDMI 2.0 HF-VSDB block parsing">
+```text
+Thierry not in cc? Is this based on his SCDC work [1] or did we have
+multiple people implementing the same thing, partially at least?
+```
+</Window>
+</v-click>
+
+---
+layout: fact
+---
+
+# Lesson Three
+*Keep up to date with latest community developments and initiatives*
+
+---

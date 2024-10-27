@@ -1,6 +1,6 @@
 ---
 theme: ../slidev-theme-joabreu
-layout: intro
+layout: cover
 title: DIFMI
 ---
 
